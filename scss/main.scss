@@ -19,3 +19,37 @@ footer.footer{
     width: 100%;
 }
 
+
+p{
+    font-family: $font-family-serif;
+    font-size: 16px;
+}
+
+
+.hero-scene{
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/bg-drink.jpg);
+        background-size: cover;
+    filter: brightness(0.8);
+}
+//Positionner les élements devant le before
+*{
+    position: relative;
+}
+.hero-scene-content{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+}
