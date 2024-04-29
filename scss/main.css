@@ -11971,6 +11971,10 @@ html {
   min-height: 100%;
 }
 
+.navbar-brand img {
+  width: 100px;
+}
+
 main {
   margin-bottom: 250px;
 }
@@ -11984,7 +11988,7 @@ footer.footer {
 
 p {
   font-family: "Hind Madurai", serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .hero-scene {
@@ -12006,13 +12010,147 @@ p {
 }
 .hero-scene .hero-scene-content {
   height: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 7px;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item-container {
+  position: relative;
+  margin: 24px;
+  width: 320px;
+  height: 570px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.img-container,
+.body-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.body-container {
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(67, 69, 119, 0.48);
+  opacity: 0;
+  transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container:hover .overlay {
+  opacity: 1;
+  height: 150px;
+}
+
+.event-info {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.title,
+.price {
+  color: #A05E2E;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 12px;
+}
+
+.info {
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.separator {
+  width: 20%;
+  height: 6px;
+  background-color: #A05E2E;
+  margin-bottom: 16px;
+}
+
+.additional-info {
+  border-top: 1px solid #bbb;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.additional-info p info {
+  font-size: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.additional-info i {
+  color: #A05E2E;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.info-description span {
+  color: #A05E2E;
+  font-weight: bolder;
+}
+
+.info-description {
+  font-size: 15px;
+}
+
+.action {
+  color: #A05E2E;
+  border: 3px solid #A05E2E;
+  background-color: #A05E2E;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: background-color 0.4s, top 0.4s;
+}
+
+.item-container:hover .action {
+  top: 50px;
+}
+
+.action:hover {
+  background-color: rgba(173, 129, 70, 0.354);
 }/*# sourceMappingURL=main.css.map */
