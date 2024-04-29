@@ -12021,7 +12021,7 @@ p {
   text-align: justify;
 }
 
-.container {
+.container-list {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12153,4 +12153,18 @@ p {
 
 .action:hover {
   background-color: rgba(173, 129, 70, 0.354);
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.form-label {
+  color: #A05E2E;
+}
+
+.allReservations a {
+  display: block;
+  color: black;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -32,6 +32,7 @@ p{
 
 .hero-scene{
     position: relative;
+    
     &::before{
         content:"";
         position: absolute;
@@ -67,7 +68,7 @@ p{
 
 // Event Card List 
 
-.container {
+.container-list {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -207,3 +208,20 @@ p{
    background-color: rgba(173, 129, 70, 0.354); 
 }
 
+// Connexion - Deconnexion
+.container{
+    margin-top: 15px;
+}
+
+.form-label {
+  color: $primary;
+}
+
+// Reservations page
+
+.allReservations a {
+    display: block;
+    color: black; 
+    padding: 10px;
+
+}
