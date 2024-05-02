@@ -18,8 +18,9 @@ function validateForm(){
     const nomOk = validateRequired(inputNom);
     const prenomOk = validateRequired(inputPreNom);
     const mailOk = validateMail(inputMail);
+    const passwordOk = validatePassword(inputPassword);
 
-    if(nomOk && prenomOk && mailOk)  {
+    if(nomOk && prenomOk && mailOk && passwordOk)  {
         btnValidation.disabled = false;
     }
     else{
@@ -32,6 +33,22 @@ function validateMail(input){
     const mailUser = input.value;
     
     if(mailUser.match(emailRegex)){
+        input.classList.add("is-valid");
+        input.classList.remove("is-invalid"); 
+        return true;
+    }
+    else{
+        input.classList.remove("is-valid");
+        input.classList.add("is-invalid");
+        return false;
+    }
+}
+
+function validatePassword(input){
+    const passwordlRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$/;
+    const passwordlUser = input.value;
+    
+    if(passwordlUser.match(passwordlRegex)){
         input.classList.add("is-valid");
         input.classList.remove("is-invalid"); 
         return true;
