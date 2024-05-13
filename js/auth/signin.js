@@ -7,9 +7,11 @@ btnSignin.addEventListener("click", checkCredentials);
 
 function checkCredentials(){
     if (mailInput.value == "blackout@gmail.fr" && passwordInput.value == "Teste1234@"){
-        alert("Vous êtes connecté");
-
+        
         const token = "qdbdkjqhbshqblkcblKCBQLSBshjdahfbbfkqkqkcqkhdiqd";
+
+        // Placer ce token en cookie
+        setToken(token);
         
         window.location.replace("/");
     }
