@@ -17,7 +17,7 @@ main{
 
 
 footer.footer{
-    padding: 15px;
+    padding:28px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -44,6 +44,8 @@ p{
         background-size: cover;
     filter: brightness(0.8);
 }
+
+
 //Positionner les élements devant le before
 *{
     position: relative;
@@ -61,10 +63,11 @@ p{
 }
 }
 
+
+
 .text-justify{
     text-align: justify;
 }
-
 
 // Event Card List 
 
@@ -225,5 +228,154 @@ p{
     display: block;
     color: black; 
     padding: 10px;
-
 }
+
+// Menu
+
+.text-center p{
+    text-align: center;
+}
+
+.img-drink {
+   position: absolute;
+   justify-content: center;
+   top: 500px;
+   width: 380px;
+}
+
+.drink{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+.price{
+    font-size: 18px;
+    margin-left: 80px;
+    
+}
+
+
+// Mobile container
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+@media (min-width: 475px) {
+    .container{
+        max-width: 475px;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .container{
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container{
+        max-width: 1024px;
+    }
+    .container p{
+        font-size: 18px
+    }
+}
+
+@media (min-width: 1280px) {
+    .container{
+        max-width: 1280px;
+    }
+    .container p{
+        font-size: 18px
+    }
+}
+
+@media (min-width: 1536px) {
+    .container{
+        max-width: 1536px;
+    }
+    .container p{
+        font-size: 18px
+    }
+}
+
+
+// Desktop container
+
+container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+
+  @media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+    .container p{
+        font-size: 18px
+    }
+  }
+  
+
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+    .container p{
+        font-size: 18px
+    }
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+    .container p{
+        font-size: 18px
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  
+  
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+
+
+
+
+

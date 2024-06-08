@@ -7,7 +7,7 @@ btnSignin.addEventListener("click", checkCredentials);
 
 function checkCredentials(){
     // Ici il faudra appeler l'API pour vérifier les credentials en BDD
-    if (mailInput.value == "blackout@gmail.fr" && passwordInput.value == "Teste1234@"){
+    if (mailInput.value == "blackout@gmail.fr" && passwordInput.value == "Teste123@"){
         
         const token = "qdbdkjqhbshqblkcblKCBQLSBshjdahfbbfkqkqkcqkhdiqd";
 

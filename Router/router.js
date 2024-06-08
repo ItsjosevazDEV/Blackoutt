@@ -46,8 +46,6 @@ const LoadContentPage = async () => {
 
 
   
-
-
   // Récupération du contenu HTML de la route
   const html = await fetch(actualRoute.pathHtml).then((data) => data.text()); 
   // Ajout du contenu HTML à l'élément avec l'ID "main-page"
